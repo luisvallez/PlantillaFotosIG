@@ -1,0 +1,68 @@
+h1 {
+  margin-top: 20px;
+}
+
+.boton {
+  padding: 8px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  cursor: pointer;
+}
+
+.main-section {
+  margin-top: 3vh;
+  display: flex;
+  background-color: black;
+  height: 80vh;
+  max-height: 1920px;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 9/16;
+}
+
+.central-section {
+  cursor: pointer;
+  height: 35%;
+  aspect-ratio: 1/1;
+  position: relative;
+  overflow: hidden;
+}
+
+.boton-central {
+  z-index: 3;
+  cursor: pointer !important;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.central-section input {
+  opacity: 0;
+  z-index: 4;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, 0%);
+}
+
+.central-section div {
+  z-index: 1;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
